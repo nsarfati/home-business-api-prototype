@@ -1,0 +1,97 @@
+categories:
+    parent: [
+        {
+            name:
+            id:
+            textLink:
+            childs: [
+                {
+                    name:
+                    textLink:
+                    id:
+                    count:
+                }
+            ]
+        }
+    ]
+
+country:
+    id:
+    abbr:
+    stateCityCase:
+    host:
+    defaultLang:
+    # Estos 2 pueden ser de vista, pero estan configurados en la base de datos.
+    # Asi mismo, no se cuanto se les puede dar el control de esto a los PLD:
+    thousandSeparator:
+    decimalSeparator:
+
+state:
+    id:
+    name:
+    host:
+    abbr:
+
+city:
+    id:
+    name:
+    host:
+
+seo:
+    keywords: [] # TBD
+    popularSearches: [] # TBD
+
+countriesList: [
+    {
+        url:
+        noFollow:
+        title: # check
+        name:
+    }
+]
+
+# Just For india (controllers\Location):
+cityList: [
+    {
+        label:
+        url:
+        count:
+    }
+]
+
+stateList: [
+    {
+        id:
+        label:
+        url:
+        count:
+    }
+]
+
+# Every other country (CityList, StateList):
+# Necesitariamos saber la cantidad total de estados de un pais
+cityList: [
+    [
+        count:
+        id:
+        name:
+        host:
+    ]
+]
+
+stateList: [
+    {
+        # State list
+        @name: {
+            stateId:
+            display: # State Name
+            url: # host
+            abbreviation:
+        }
+        # City list
+        @name: {
+            display: # City name
+            url: #host
+        }
+    }
+]
